@@ -1,0 +1,38 @@
+a {
+  color: black !important;
+}
+
+.my-card {
+  margin-top: 30px;
+}
+
+.auth-card {
+  padding: 20px;
+  text-align: center;
+  max-width: 400px;
+  margin: 10px auto;
+}
+
+.input-field input:focus {
+  border-bottom: 1px solid royalblue !important;
+  box-shadow: 0 1px 0 0 royalblue !important;
+}
+
+.home {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.home-card {
+  max-width: 500px;
+  height: max-content;
+  margin: 30px auto;
+}
+
+.page-footer{
+  background-color: royalblue;
+}
+
+.footer-copyright{
+  text-align: center;
+}

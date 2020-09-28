@@ -1,0 +1,41 @@
+{
+  "name": "dropeditions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FouadElayachi/dropeditions.git"
+  },
+  "keywords": [
+    "dropeditions",
+    "node",
+    "react"
+  ],
+  "author": "Fouad Elayachi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FouadElayachi/dropeditions/issues"
+  },
+  "homepage": "https://github.com/FouadElayachi/dropeditions#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.7"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/register": "^7.11.5",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "nodemon": "^2.0.4"
+  }
+}

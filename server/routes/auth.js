@@ -2,8 +2,8 @@ import express from 'express';
 import mongoose from 'mongoose';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
-import {JWT_SECRET} from '../keys';
 import requireLogin from '../midlleware/requireLogin';
+import 'dotenv/config';
 
 const User = mongoose.model("User");
 const router = express.Router();
@@ -75,7 +75,7 @@ router.post('/signin', (req, res) => {
         .then(doMatch => {
             if(doMatch) {
                 //res.send({message: `Welcome ${savedUser.name}`});
-                const token = jwt.sign({_id: savedUser._id}, JWT_SECRET);
+                const token = jwt.sign({_id: savedUser._id}, process.env.JWT_SECRET);
                 const {_id, name, email} = savedUser;
                 res.json({
                     token, user:{_id, name, email}

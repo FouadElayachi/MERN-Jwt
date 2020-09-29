@@ -1,8 +1,8 @@
 import express from 'express';
 import mongoose from 'mongoose';
-import { MONGOURI } from "./keys";
 import './models/user';
 import routes from './routes/auth';
+import 'dotenv/config';
 
 const app = express();
 const PORT = 5000;
@@ -10,7 +10,7 @@ const PORT = 5000;
 app.use(express.json());
 app.use(routes);
 
-mongoose.connect(MONGOURI, {
+mongoose.connect(process.env.MONGOURI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });

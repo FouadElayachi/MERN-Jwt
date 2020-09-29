@@ -1,5 +1,5 @@
 import jwt from 'jsonwebtoken';
-import {JWT_SECRET} from '../keys';
+import 'dotenv/config';
 import mongoose from 'mongoose';
 
 const User = mongoose.model("User");
@@ -14,7 +14,7 @@ module.exports = ((req, res, next) => {
     }
 
     const token = authorization.replace("Bearer ", "");
-    jwt.verify(token, JWT_SECRET, (error, payload) => {
+    jwt.verify(token, process.env.JWT_SECRET, (error, payload) => {
         if(error) {
             return res.status(401).json({ error: `You are not allowed to this ressources, pleast try to connect` });
         }

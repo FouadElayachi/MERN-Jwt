@@ -1,5 +1,5 @@
 # Dropeditions
-An application that implement authentification using JWT, and consulting data from an external API.
+An application that implement authentification using JWT, and consulting data from an external API, using MERN stack (MongoDB, Express.js, React and Node.js).
 
 # Installation
 - To install you should have node.js installed. If it is not the case you can download it from: https://nodejs.org.

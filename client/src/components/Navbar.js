@@ -11,14 +11,15 @@ const Navbar = () => {
         dispatch({ type: "CLEAR" });
         history.push('/login');
     }
+
     const renderList = () => {
         if (state) {
             return [
-                <li><Link to="/">Home</Link></li>,
-                <li><Link to="/private1">Private section 1</Link></li>,
-                <li><Link to="/private2">Private section 2</Link></li>,
-                <li><Link to="/private3">Private section 3</Link></li>,
-                <li>
+                <li key={''}><Link to="/">Home</Link></li>,
+                <li key={'private1'}><Link to="/private1">Private section 1</Link></li>,
+                <li key={'private2'}><Link to="/private2">Private section 2</Link></li>,
+                <li key={'private3'}><Link to="/private3">Private section 3</Link></li>,
+                <li key={'login'}>
                     <button className="btn waves-effect waves-light gray lighten-2" onClick={logout}>
                         Logout
                     </button>
@@ -27,9 +28,9 @@ const Navbar = () => {
         }
         else {
             return [
-                <li><Link to="/">Home</Link></li>,
-                <li><Link to="/signup">Sign up</Link></li>,
-                <li><Link to="/login">Login</Link></li>
+                <li key={''}><Link to="/">Home</Link></li>,
+                <li key={'signup'}><Link to="/signup">Sign up</Link></li>,
+                <li key={'login'}><Link to="/login">Login</Link></li>
             ]
         }
     }

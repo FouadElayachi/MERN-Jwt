@@ -36,3 +36,8 @@ a {
 .footer-copyright{
   text-align: center;
 }
+
+blockquote{
+  margin-left: auto;
+  margin-right: auto;
+}

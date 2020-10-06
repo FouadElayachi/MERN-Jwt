@@ -16,7 +16,7 @@ An application that implement authentification using JWT, and consulting data fr
 MONGOURI= //URI given by cloud mongodb.
 JWT_SECRET= //A random string for JWT token.
 ```
-- Run the command `npm install` to install depencies.
+- Run the command `npm install` to install dependencies.
 - Add the .babelrc file if it dosen't exist to support ES6 syntax and copy the following code on it:
 ```
 {

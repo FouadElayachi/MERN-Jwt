@@ -1,4 +1,4 @@
-# Dropeditions
+# MERN-Jwt
 An application that implement authentification using JWT, and consulting data from an external API, using MERN stack (MongoDB, Express.js, React and Node.js).
 
 # Installation
